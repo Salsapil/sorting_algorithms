@@ -8,6 +8,10 @@
 - A simple sorting algorithm that builds the final sorted array (or list) one item at a time by comparisons. It is much less efficient on large lists.   
 ****   
 
+**Selection Sort Algorithm**
+-  An in-place comparison sorting algorithm. The algorithm divides the input list into two parts: a sorted sublist of items which is built up from left to right at the front (left) of the list and a sublist of the remaining unsorted items that occupy the rest of the list.   
+****   
+
 ## Authors
 
 - [@Shenouda Mikhael](https://github.com/shenoudaMikhael)
