@@ -4,7 +4,7 @@
  *                  the Selection sort algorithm.
  * @array: Pointer to the array to be sorted.
  * @size: Number of elements in the array.
- * Return: void 
+ * Return: void
  */
 void selection_sort(int *array, size_t size)
 {
