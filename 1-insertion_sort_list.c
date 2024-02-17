@@ -29,7 +29,7 @@ void swap(listint_t *first_node, listint_t *second_node)
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *i, *j;
-	
+
 	if (list == NULL || !(*list))
 		return;
 
