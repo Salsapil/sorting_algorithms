@@ -1,28 +1,33 @@
 #include "sort.h"
-void swap(int *a, int *b)
+int swap(int *a, int *b)
 {
     int temp = *a;
     *a = *b;
     *b = temp;
+    if (temp != *a)
+        return 1;
+
+    return 0;
 }
 int partition(int *array, int low, int high, size_t size)
 {
     int pivot = array[high];
-    int j = 0, partitionIndex = low - 1;
+    int j = 0, partitionIndex = low;
 
-    for (j = low; j <= high - 1; j++)
+    for (j = low; j < high; j++)
     {
         if (array[j] < pivot)
         {
+            if (swap(&array[partitionIndex], &array[j]))
+                print_array(array, size);
+
             partitionIndex = partitionIndex + 1;
-            swap(&array[partitionIndex], &array[j]);
-            print_array(array, size);
         }
     }
 
-    swap(&array[partitionIndex + 1], &array[high]);
-    print_array(array, size);
-    return partitionIndex + 1;
+    if (swap(&array[partitionIndex], &array[high]))
+        print_array(array, size);
+    return partitionIndex;
 }
 void quick_sort_H(int *array, int low, int high, size_t size)
 {
