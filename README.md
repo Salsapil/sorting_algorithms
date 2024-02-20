@@ -12,6 +12,10 @@
 -  An in-place comparison sorting algorithm. The algorithm divides the input list into two parts: a sorted sublist of items which is built up from left to right at the front (left) of the list and a sublist of the remaining unsorted items that occupy the rest of the list.   
 ****   
 
+**Quick Sort Algorithm**
+- A divide-and-conquer algorithm. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. For this reason, it is sometimes called partition-exchange sort.[4] The sub-arrays are then sorted recursively.   
+****
+
 ## Authors
 
 - [@Shenouda Mikhael](https://github.com/shenoudaMikhael)
